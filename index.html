@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src='script.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href='style.css'>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ERIC RUTHIG</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Past Projects</a>
+              <a class="nav-link" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+<div class="modal"  id='modalMain'>
+    <div class='modalMain'>
+        <span class="close" id='close'>&times;</span>
+        <p>"Welcome"</p>
+        <div class='col-md-3 ms-auto'>
+            <div class='modal-dialog modal-dialog-centered'>
+                <div class="head"></div>
+                <div class="lefteye"></div>
+                <div class="righteye"></div>
+                <div class="mouth"></div>
+                <div class="body"></div>
+                <div class="leftarm"></div>
+                <div class="rightarm"></div>
+                <div class="legs"></div>
+            </div>
+        </div>
+    </div> 
+</div>     
+<div class="modal-dialog modal-dialog-scrollable">
+    Eric Ruthig is a web developer and recent graduate of Eleven Fifty Academy in Indianapolis.
+</div>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          EDUCATION
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Eric studied at Eleven Fifty Academy in Fishers, IN from 2020-21.</strong> He received a Gold Badge Certification.
+          Previously he attended Pacific College Of Oriental Medicine in Chicago, IL, graduating in 2013 with a Certification in Massge Therapy. 
+          Eric graduated high school in 2002 from Covenant Christian in Indianapolis, IN.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          PROJECTS
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>CSS Creature</strong><img src="./assets/green.png" class="rounded mx-auto d-block" alt="projects" href='https://ericruthig.github.io/static_layout/'>
+          <strong>Static Layout</strong><img src="./assets/static.png" class="rounded mx-auto d-block" alt="projects" href='https://ericruthig.github.io/csscreature/'>
+          <strong>Terminal Dungeon</strong><img src="./assets/terminal dungeon.JPG" class="rounded mx-auto d-block" alt="projects">
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <div id="contactForm" class="accordion-collapse collapse" aria-labelledby="headingThree" 
+        data-bs-parent="#accordionExample">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <div class="accordion-body">
+        
+          Contact Form
+        </button>
+      </h2>
+        <strong>Input</strong> Please send me a message!
+      <form
+        action="https://formspree.io/f/xyybbgdl"
+        method="POST">
+        <label>
+          Your email:
+          <input type="email" name="_replyto">
+        </label>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    </div>
+ 
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+</body>
+</html>
